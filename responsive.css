@@ -1,0 +1,68 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+div.media,div.paragraph,div.queries{
+    margin: 15px;
+}
+div.media{
+    padding: 15px;
+    background-color: rgb(197, 196, 196);
+}
+div.paragraph{
+    padding: 15px;
+    font-size: 20px;
+    background-color: rgb(179, 179, 179);
+}
+div.queries{
+    font-size: 20px;
+    padding: 15px;
+    background-color: rgb(204, 139, 115);
+}
+div.container{
+    margin: 0 auto;
+    width: 95%;
+}
+
+
+@media only screen and (min-width: 481px){
+    div.media,div.paragraph,div.queries{
+        margin: 15px;
+        width: 90%;
+        background-color: rgb(140, 231, 186);
+    }
+     .desktop, .phone{
+        display: none;
+        
+    }
+    .tablet{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    div.media,div.paragraph,div.queries{
+        margin: 15px;
+        width: 90;
+        background-color: rgb(243, 76, 109);
+    }
+     .desktop, .tablet{
+        display: none; 
+    }
+    .phone{
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    div.media,div.paragraph,div.queries{
+        margin: 15px;
+        width: 90%;
+        background-color: rgb(231, 173, 140);
+    }
+     .tablet, .phone{
+        display: none;
+    }
+    .desktop{
+        display: block;
+    }
+}
